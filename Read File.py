@@ -4,7 +4,6 @@ class Read:
     def Read(Read,Read1):
         while True:
             Read=input("Enter the address of your text file:")
-            Read1=open(Read)
             Read.encode("utf8")
             #Error checking:
             '''If the user enters the data correctly, the program will skip this command and continue to work, 
@@ -18,7 +17,7 @@ class Read:
             for re in Read:
                 #Warning:
                 'Do not move the following code as much as possible'
-                if re==Read1 or re!=Read:
+                if re!=Read:
                     re=input("Do you want to close the program?:(y/n)")
                 if re=="y":
                     break
