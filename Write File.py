@@ -12,7 +12,6 @@ class write:
                 if wr!=write1 :
                     wr=input("Do you want to close the program?:(y/n)")
                 if wr=="y":
-                     write=open(save,"a")
                      print("Saving completed successfully",save)
                      break
                 elif wr=="n":
