@@ -1,4 +1,5 @@
 import sys
+import time
 class write:
     def write():
         while True:
@@ -15,5 +16,7 @@ class write:
                      print("Saving completed successfully",save)
                      break
                 elif wr=="n":
+                    print("Saving completed successfully",save)
+                    time.sleep(2)
                     sys.exit(0)
     write()
